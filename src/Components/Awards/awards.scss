@@ -1,0 +1,126 @@
+.awards{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    .achivements{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./Pics/BG.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        gap: 1rem;
+        
+        .heading{
+            font-size: 4rem;
+            color: white;
+            align-items: center;
+        }
+        .picList{
+            display: flex;
+            flex-direction: row;
+            padding: .5rem;
+            padding-bottom: 2rem;
+            gap:7rem;
+            .achive{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                .image{
+                    width:10rem;
+                    box-shadow: black 0 2px 4px;
+                }
+                .text{
+                    align-items: center;
+                    text-align: center;
+                    font-weight: 500;
+                    color: white;
+                }
+            }
+        }
+        
+    }
+    .Media{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 50%;
+        gap: 1rem;
+        padding: 3rem;
+        .heading{
+            font-size: 4rem;
+            color: black;
+        }
+        .picList{
+            display: flex;
+            flex-direction: row;
+            gap:7rem;
+            .achive{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                object-fit: cover;
+                .image{
+                    overflow: hidden;
+                    border-radius: 20px;
+                    width:15rem;
+                    box-shadow: black 0 2px 4px;
+                    .Med{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:850px){
+    .awards{
+        height: auto;
+        .achivements{
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            .picList{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .image{
+                    display: flex;
+                    width: 80%;
+                }
+            }
+        }
+        .Media{
+            width: 100%;
+            .picList{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .image{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    
+}

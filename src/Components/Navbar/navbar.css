@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px black;
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+.header .logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+  gap: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header .logo .icon {
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+}
+.header .navBar {
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.header .navBar .navLists {
+  display: flex;
+  gap: 2rem;
+}
+.header .navBar .navLists .navItem {
+  cursor: pointer;
+}
+.header .navBar .navLists .navItem .navLink {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.header .navBar .navLists .navItem .navLink:hover {
+  color: rgb(158, 158, 158);
+}
+.header .toggleNavBar {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .header .navBar {
+    top: 10vh;
+    display: block;
+    width: 50vw;
+    height: 90vh;
+    background-color: white;
+    position: fixed;
+    right: 0rem;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  .header .navBar .navLists {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .activeNavBar {
+    transform: translateX(0);
+  }
+  .header .toggleNavBar {
+    display: block;
+  }
+}/*# sourceMappingURL=navbar.css.map */

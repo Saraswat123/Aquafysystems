@@ -1,0 +1,124 @@
+.awards {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  overflow: hidden;
+}
+.awards .achivements {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Pics/BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  gap: 1rem;
+}
+.awards .achivements .heading {
+  font-size: 4rem;
+  color: white;
+  align-items: center;
+}
+.awards .achivements .picList {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  gap: 7rem;
+}
+.awards .achivements .picList .achive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.awards .achivements .picList .achive .image {
+  width: 10rem;
+  box-shadow: black 0 2px 4px;
+}
+.awards .achivements .picList .achive .text {
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+.awards .Media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  gap: 1rem;
+  padding: 3rem;
+}
+.awards .Media .heading {
+  font-size: 4rem;
+  color: black;
+}
+.awards .Media .picList {
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+}
+.awards .Media .picList .achive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.awards .Media .picList .achive .image {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 15rem;
+  box-shadow: black 0 2px 4px;
+}
+.awards .Media .picList .achive .image .Med {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+  .awards {
+    height: auto;
+  }
+  .awards .achivements {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+  }
+  .awards .achivements .picList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .awards .achivements .picList .image {
+    display: flex;
+    width: 80%;
+  }
+  .awards .Media {
+    width: 100%;
+  }
+  .awards .Media .picList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .awards .Media .picList .image {
+    width: 80%;
+  }
+}/*# sourceMappingURL=awards.css.map */

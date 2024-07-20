@@ -1,0 +1,39 @@
+.headings {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+.headings .listItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3vh;
+  z-index: 100;
+}
+.headings .listItems .items {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+}
+.headings .listItems .items .Image {
+  position: relative;
+  width: 5rem;
+}
+.headings .listItems .items .para {
+  color: white;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 850px) {
+  .headings .listItems .items .para {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=headings.css.map */

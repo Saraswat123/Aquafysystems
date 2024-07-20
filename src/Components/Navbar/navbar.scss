@@ -1,0 +1,85 @@
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px black;
+    background: white;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    .logo{
+        font-weight: 600;
+        font-size: 1.3rem;
+        gap: 20px;
+        justify-content: space-between;
+        cursor: pointer;
+        .icon{
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+        }
+    }
+    .navBar {
+        height: 60px;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        .navLists{
+            display: flex;
+            gap: 2rem;
+            .navItem{
+                cursor: pointer;
+                .navLink{
+                    color:black;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    &:hover{
+                        color: rgb(158, 158, 158);
+                    }
+                }
+            }
+        }
+    }
+
+    .toggleNavBar{
+        display: none;
+    }
+       
+
+    @media screen and (max-width:850px) {
+        .navBar{
+            top:10vh;
+            display: block;
+            width: 50vw;
+            height: 90vh;
+            background-color: white;
+            position: fixed;
+            right: 0rem;
+            z-index: 10;
+            transition: transform 0.3s ease-in-out; 
+            transform: translateX(100%);
+            
+            .navLists{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                background: white;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .activeNavBar{
+            transform: translateX(0);
+        }
+        .toggleNavBar{
+            display: block;
+        }
+
+
+    }
+}

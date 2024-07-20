@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useRef} from 'react'
+import './app.css'
+import Navbar from './Components/Navbar/Navbar'
+import Header from './Components/Header/Header'
+import AboutUs from './Components/AboutUs/AboutUs'
+import Awards from './Components/Awards/Awards'
+import Contact from './Components/Contact/Contact'
+import Tech from './Components/Tech/Tech'
+import Headings from './Components/Headings/Headings'
 
-function App() {
+
+const App = () => {
+
+  const headerRef = useRef(null);
+  const headingsRef = useRef(null);
+  const techRef = useRef(null);
+  const awardsRef = useRef(null);
+  const aboutUsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar
+        headerRef={headerRef}
+        headingsRef={headingsRef}
+        techRef={techRef}
+        awardsRef={awardsRef}
+        aboutUsRef={aboutUsRef}
+        contactRef={contactRef}
+      />
+      <Header ref={headerRef} />
+      <Headings ref={headingsRef} />
+      <Tech ref={techRef} />
+      <Awards ref={awardsRef} />
+      <AboutUs ref={aboutUsRef} />
+      <Contact ref={contactRef} />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,49 @@
+.aboutUs{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    padding: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    margin:auto;
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    
+    .content{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        .heading{
+            font-weight: 600;
+            font-size: 3rem;
+        }
+        .para{
+            width: 100%;
+            font-weight: 200;
+            font-size: 1.5rem;
+            overflow:hidden;
+        }
+    }
+    .picture{
+        width: 20rem;
+    }
+}
+@media screen and (max-width:850px) {
+    .aboutUs{
+        height:auto;
+        padding:1rem;
+        .content{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            height: 100%;
+            width: 80vw;
+            overflow: scroll;
+        }
+    }
+    .picture{
+        display: none;
+    }
+}
